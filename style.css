@@ -1,5 +1,30 @@
-*{
+* {
     box-sizing: border-box;
     margin:0;
     padding:0;
+    background-color: #17153B;
+    border: 1px, solid, red;
+}
+
+div {
+    display: flex;
+}
+
+#body{
+    flex-direction: column;
+}
+
+#header{
+    align-items: center;
+    height: 8vh;
+}
+
+#main{
+    align-items: center;
+    height: 80vh;
+}
+
+#footer{
+    align-items: center;
+    height: 8vh;
 }

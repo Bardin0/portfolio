@@ -2,29 +2,46 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    background-color: #17153B;
+    background-color: #070F2B;
     border: 1px, solid, red;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #dee0e3;
 }
 
 div {
     display: flex;
 }
 
-#body{
+a, a::after, a::before{
+    color: #dee0e3;
+}
+
+.nav-element{
+    margin:10px;
+    font-size:20px;
+}
+
+.body{
     flex-direction: column;
 }
 
-#header{
+.header{
+    display:flex;
     align-items: center;
+    justify-content: center;
     height: 8vh;
 }
 
-#main{
+.navbar{
+    padding: 20px;
+}
+
+.main{
     align-items: center;
     height: 80vh;
 }
 
-#footer{
+.footer{
     align-items: center;
     height: 8vh;
 }

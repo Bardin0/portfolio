@@ -2,46 +2,38 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    background-color: #070F2B;
-    border: 1px, solid, red;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #dee0e3;
 }
 
-div {
-    display: flex;
+body {
+    background-color: rgb(1, 9, 16);
 }
 
-a, a::after, a::before{
-    color: #dee0e3;
+.sidebar{
+
+    display:flex;
+    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 .nav-element{
-    margin:10px;
+    margin:30px;
+    padding:30px;
     font-size:20px;
+    border:1px solid red;
+    background-color:rgb(2, 17, 29);
+    font-size: 16px;
 }
 
-.body{
-    flex-direction: column;
-}
-
-.header{
+.main-wrapper{
     display:flex;
-    align-items: center;
-    justify-content: center;
-    height: 8vh;
-}
-
-.navbar{
-    padding: 20px;
 }
 
 .main{
     align-items: center;
-    height: 80vh;
-}
-
-.footer{
-    align-items: center;
-    height: 8vh;
+    border:1px solid white;
 }

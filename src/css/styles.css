@@ -32,7 +32,6 @@ a {
     max-width: 250px;
     width:100%;
     min-height: 600px;
-    max-height:60vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -72,35 +71,40 @@ a {
 }
 
 .main{
-    align-items: center;
-    border:1px solid white;
-    margin:30px 10px 30px 280px;
+    display: flex;
+    flex-direction: column;
     flex:1;
-    min-width: 400px;
+    align-items: center;
+    justify-content: center;
+    border:1px solid white;
+    margin:15vh 10px 15vh 280px;
     
 }
 
-#name-header{
-    height:500px;
+
+.body-paragraph{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    width: 100%;
+    max-width: 800px;
+    padding: 12px;
+    margin: 12px;
     border:1px solid white;
+
 }
 
-#tech-stack-paragraph{
-    height:500px;
-    border:1px solid white;
-}
+@media only screen and (max-width:760px) {
+    
+    .sidebar{
+        display: none;
+    }
 
-#projects-paragraph{
-    height:500px;
-    border:1px solid white;
-}
+    .main{
+        margin: 15vh 30px 15vh 30px;
+    }
 
-#my-resume-paragraph{
-    height:500px;
-    border:1px solid white;
-}
-
-#contact-me-paragraph{
-    height:500px;
-    border:1px solid white;
 }

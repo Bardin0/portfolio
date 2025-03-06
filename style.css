@@ -1,30 +1,42 @@
+@font-face {
+    font-family: Proximanova;
+    src: url(Fontspring-DEMO-proximanova-black.otf);
+}
+
 * {
     box-sizing: border-box;
     margin:0;
     padding:0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #dee0e3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(199, 199, 199);
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(1, 9, 16);
+    background: linear-gradient(rgb(4, 26, 46),rgb(1,9,16));
+
 }
 
 .sidebar{
 
     display:flex;
-    flex: 1 1 750px;
+    flex: 1 1 600px;
+    position: fixed;
     max-width: 250px;
-    min-height:800px;
-    max-height: 800px;
+    width:100%;
+    min-height: 600px;
+    max-height:60vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 30px 12px 30px 12px;
-    /* border: 1px solid pink; */
+    margin: 15vh 12px 15vh 12px;
     background-color: rgb(5, 15, 24);
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.05), 2px 2px 8px rgba(255, 255, 255, 0.1);
+    gap: 2rem;
 
 }
 
@@ -47,8 +59,28 @@ body {
 .main{
     align-items: center;
     border:1px solid white;
-    margin:30px 10px 30px 10px;
+    margin:30px 10px 30px 280px;
     flex:1;
     min-width: 400px;
     
+}
+
+#name-header{
+    height:500px;
+    border:1px solid white;
+}
+
+#tech-stack-paragraph{
+    height:500px;
+    border:1px solid white;
+}
+
+#projects-paragraph{
+    height:500px;
+    border:1px solid white;
+}
+
+#contact-me-paragraph{
+    height:500px;
+    border:1px solid white;
 }
